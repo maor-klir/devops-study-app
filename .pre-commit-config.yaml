@@ -1,0 +1,8 @@
+# Commitizen is going to lint our commit message whenever a commit is made
+# and check if it's according to Conventional Commits standard
+repos:
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v1.17.0
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]

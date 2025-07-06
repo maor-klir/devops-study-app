@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if ! command -v cz >/dev/null && [ "$DEVPOD" = "true" ]; then  # if cz is not installed and running inside a DevPod Dev container
+  git config --global push.autoSetupRemote true   # automatically set up the upstream tracking for new branches when we push
+  git config --global --add safe.directory /workspaces/devops-study-app  # set the repo as safe so Git will not complain about ownership issues
+  pip install --user pipx
+  pipx install commitizen
+  pre-commit install
+  pre-commit install --hook-type commit-msg
+fi

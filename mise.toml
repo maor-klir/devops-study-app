@@ -1,0 +1,16 @@
+[tools]
+pre-commit = "latest"
+python = "3.13"
+uv = "latest"   # Manage Python projects and dependencies
+
+[settings]
+python.uv_venv_auto = true   # UV will activate virtual environments automatically
+experimental = true   # Works together with the previous setting
+idiomatic_version_file_enable_tools = ["python"]   # Disable warnings when a Python version file is added
+
+[env]   # Environment variables
+APP_REPO = "devops-study-app"
+GITOPS_REPO = "devops-study-app-gitops"
+
+[hooks]
+enter = "bash ./scripts/setup_project"   # The "enter" hook will be triggered when we SSH into our dev container

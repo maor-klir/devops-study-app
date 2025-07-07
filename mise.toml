@@ -2,6 +2,7 @@
 lsd = "latest"
 pre-commit = "latest"
 python = "3.13"
+trivy = "latest"
 uv = "latest"   # Manage Python projects and dependencies
 
 [settings]

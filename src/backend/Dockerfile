@@ -21,8 +21,17 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 
 FROM python:3.13-alpine
 
+# Create a non-root user and group with specific IDs
+RUN addgroup -S -g 1000 app && adduser -S -u 1000 -G app app
+
 # Copy the environment, but not the source code
 COPY --from=builder --chown=app:app /app/.venv /app/.venv
+
+# Switch to the non-root user
+USER app
+
+# Expose the correct port. This is more for documentation purposes since it's specified within our source code
+EXPOSE 22112
 
 # Run the application, without even using uv, we just run the executable
 CMD ["/app/.venv/bin/study-tracker-api"]

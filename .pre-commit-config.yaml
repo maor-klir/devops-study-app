@@ -1,8 +1,16 @@
 # Commitizen is going to lint our commit message whenever a commit is made
-# and check if it's according to Conventional Commits standard
+# and check if it's according to the Conventional Commits standard
 repos:
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v1.17.0
     hooks:
       - id: commitizen
         stages: [commit-msg]
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.12.1
+    hooks:
+      # Run the linter.
+      - id: ruff
+      # Run the formatter.
+      - id: ruff-format

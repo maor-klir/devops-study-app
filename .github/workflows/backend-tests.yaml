@@ -38,6 +38,11 @@ jobs:
       - name: Set up Python
         run: uv python install
 
+      - name: Install UV
+        uses: astral-sh/setup-uv@v5
+      - name: Set up Python
+        run: uv python install
+
       - name: Install dependencies
         run: |
           uv sync --locked --dev
@@ -74,3 +79,8 @@ jobs:
           header: test-coverage
           recreate: true
           path: code-coverage-results.md
+
+      - name: Run Backend Tests
+        run: |
+          uv run pytest
+

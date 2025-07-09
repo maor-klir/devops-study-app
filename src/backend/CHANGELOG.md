@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/maor-klir/devops-study-app/compare/backend-v0.1.0...backend-v0.2.0) (2025-07-09)
+
+
+### Features
+
+* **backend:** add container image building and pushing ([#12](https://github.com/maor-klir/devops-study-app/issues/12)) ([18cfe33](https://github.com/maor-klir/devops-study-app/commit/18cfe330bfe3c5a67485467b662e639e1bcfd328))
+
 ## 0.1.0 (2025-07-09)
 
 

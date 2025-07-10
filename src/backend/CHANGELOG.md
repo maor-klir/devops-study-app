@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.3...backend-v0.2.4) (2025-07-10)
+
+
+### Bug Fixes
+
+* **backend:** trigger CI and fix ONCE AGAIN the docker-build-push GHA workflow ([#24](https://github.com/maor-klir/devops-study-app/issues/24)) ([ea2a559](https://github.com/maor-klir/devops-study-app/commit/ea2a5597a3dda7506678341c8af723a8957579dd))
+
 ## [0.2.3](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.2...backend-v0.2.3) (2025-07-10)
 
 

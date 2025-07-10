@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.2...backend-v0.2.3) (2025-07-10)
+
+
+### Bug Fixes
+
+* **backend:** trigger CI and adjust docker-build-push workflow ([#22](https://github.com/maor-klir/devops-study-app/issues/22)) ([892d732](https://github.com/maor-klir/devops-study-app/commit/892d732ad6592fc1a1f1065ba86108efff9618f0))
+
 ## [0.2.2](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.1...backend-v0.2.2) (2025-07-10)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.1...backend-v0.2.2) (2025-07-10)
+
+
+### Bug Fixes
+
+* **backend:** trigger CI after discovering a typo on a GHA workflow ([#20](https://github.com/maor-klir/devops-study-app/issues/20)) ([2fa9608](https://github.com/maor-klir/devops-study-app/commit/2fa96089e1f567a974627ef5c8480867ed36680e))
+
 ## [0.2.1](https://github.com/maor-klir/devops-study-app/compare/backend-v0.2.0...backend-v0.2.1) (2025-07-10)
 
 

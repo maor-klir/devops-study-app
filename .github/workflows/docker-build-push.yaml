@@ -90,7 +90,7 @@ jobs:
     with:
       tag: ${{ needs.build-and-push-backend.outputs.tag || needs.build-and-push-frontend.outputs.tag }}
       image: ${{ needs.build-and-push-backend.outputs.image || needs.build-and-push-frontend.outputs.image }}
-
+    # Secrets must be explicitly passed to the called workflow
     secrets:
       GITOPS_DEPLOY_KEY: ${{ secrets.GITOPS_DEPLOY_KEY }}
       DEVOPS_STUDY_APP: ${{ secrets.DEVOPS_STUDY_APP }}

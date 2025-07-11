@@ -10,5 +10,8 @@
   "forwardPorts": [
     "22111",
     "22112"
-  ]
+  ],
+  "remoteEnv": {
+  "MISE_GITHUB_TOKEN": "${localEnv:MISE_GITHUB_TOKEN}"
+}
 }
